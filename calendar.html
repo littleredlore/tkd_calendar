@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="calendar_style.css">
+<script src="jquery-1.8.3.min.js"></script>
+<script src="calendar_script.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wrapper">
+
+	<div class="menu">
+		<p class="fakeName">Hi, Brittany!</p>
+		
+		<h1 id="title">WISSEL MARTIAL ARTS</h1>
+
+		<ul class="fakeLink">
+			<li class="rightLink">About</li>
+			<li id="history" class="rightLink">Practice History</li>
+		</ul>
+		
+
+		<div class="mBorder"></div>
+
+	</div>
+
+	<div class="content">
+		<div class="calendarArea">
+			<div class="instructions">
+				<p class="instructions">Select a day to view detailed information and add/or edit the agenda, or click the bar on the left of any week to see an overview.</p>
+			</div>
+			
+			<ul class="dayofWeek">
+				<li>S</li>
+				<li>M</li>
+				<li>T</li>
+				<li>W</li>
+				<li>T</li>
+				<li>F</li>
+				<li>S</li>
+			</ul>
+			
+			<div class="weeks">
+
+				<!-- this is where the script generates the calendar junk -->
+			</div>
+
+
+		</div>
+
+		<div class="controls">
+			<div class="controlHead">
+				<h2 id="controlDate" class="control">SELECT DATE</h2>
+				
+			</div>
+			<div class="dateOptions">
+				<p class="dismissDate">Click date again to dismiss selection.</p>
+
+				<div class="existingPlans"></div>
+				<div class="addStuff"></div>
+			</div>
+			<div class="reminders">
+				<ul class="reminders">
+					<li class="keyClass"><span>Class is held on Tuesdays and Thursdays from 6:15 to 7:15pm.</span></li>
+					<li class="keyTest"><span>The next test will be May 14, 2015.</span></li> 
+					<li class="keyPrac"><span>Make sure you're practicing!</span></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div>
+</body>
+</html>

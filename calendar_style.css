@@ -1,0 +1,492 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	background-color: #fff;
+}
+
+div.wrapper{
+	left:0;
+	top: 0;
+	width:100%;
+	height:100%;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background-color: #fff;
+}
+
+div.menu{
+	position:relative;
+	height:40px;
+	width:1040px;
+	margin:0 auto;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 100;
+}
+div.mBorder{
+	width:1050px;
+	margin:0 auto;
+	border-bottom: 1px solid #CCCCCC;	
+}
+
+div.content{
+	top:20px;
+	width:1000px;
+	height:100%;
+	margin: 0 auto;
+	padding:0px;
+	position:relative;
+}
+
+div.instructions{
+	margin-bottom:10px;
+	padding:0;
+}
+
+div.calendarArea{
+	position:relative;
+	margin-left:0px;
+	padding:0;
+	width:630px;
+	height:100%;
+	float:left;
+}
+
+div.hoverExpand{
+	position: relative;
+	float: left;
+	width:20px;
+	height:50px;
+	padding-bottom: 30px;
+	padding-right:10px;
+	opacity: 0;
+	margin:0;
+	display: inline;
+	cursor: pointer;
+}
+
+div.hoverBox{
+	padding:0;
+	margin:0;
+	position:relative;
+}
+
+div.weeks{
+	padding: 0;
+	margin: 0;
+}
+
+div.weekExpand{
+	width:625px;
+	height:100px;
+	display:none;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+div.weekClass{
+	float:left;
+	margin-left:30px;
+	padding:0;
+	width:262px;
+	height:100px;
+}
+
+div.weekPractice{
+	position: relative;
+	float:left;
+	margin-left:35px;
+	padding:0px;
+	width:262px;
+	height:100px;
+}
+
+div.controls{
+	position:fixed;
+	margin-left:35px;
+	margin-top:20px;
+	left:780px;
+	padding:0;
+	width:335px;
+	height:100%;
+	float:left;
+}
+
+div.controlHead{
+	padding-bottom: 5px;
+	margin:0;
+	width:100%;
+	height: 20px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+div.dateOptions{
+	padding: 0;
+	margin:0;
+	background-color: #f0f0f0;
+	width:335px;
+	height:500px;
+}
+
+div.existingPlans{
+	margin-bottom: 35px;
+}
+
+div.editHover{
+	width:335px;
+	height:auto;
+	margin: 0;
+	padding: 0;
+}
+
+div.addStuff{
+	border-top: 1px solid #CCCCCC;
+	padding:0;
+	margin: 0px;
+	width: 335px;
+	height:100%;
+}
+
+div.submitInfo{
+	margin:auto;
+	padding:0;
+	width:235px;
+}
+
+div.reminders{
+	padding:0;
+	margin-top:25px;
+	width:335px;
+	height:100px;
+	background-color: #f0f0f0;
+	border-top: 1px solid #CCCCCC;
+}
+
+ul.reminders{
+	list-style-type: disc;
+	margin-left: 35px;
+	font-size:20px;
+	padding-top:5px;
+	line-height: 14px;
+}
+
+li.keyClass{
+	list-style-type: disc;
+	color:#BF1F1F;
+	padding-top:5px;
+	margin: 0;
+}
+
+li.keyTest{
+	color:#F2BC46;
+	padding-top:5px;
+	margin: 0;
+}
+
+li.keyPrac{
+	color:#335582;
+	padding-top:5px;
+	margin: 0;
+}
+
+li span{
+	padding-bottom: 10px;
+	margin: 0;
+	color: black;
+	font-size: 14px;
+}
+
+p.instructions{
+	padding:0;
+	margin:0;
+	color: #999;
+	font-size: 11px;
+	font-weight: 300;
+}
+
+p.dismissDate{
+	padding-top:5px;
+	margin:0;
+	color: #999;
+	font-size: 11px;
+	font-weight: 300;
+	text-align: center;
+	opacity: 0;
+}
+
+p.noPlans{
+	padding: 20px 0px;
+	margin-top: 30px;
+	position: relative;
+	text-align: center;
+}
+
+p.weekClass{
+	padding:0;
+	margin:0;
+}
+
+p.weekPractice {
+	padding:0;
+	margin:0;
+}
+
+h4.practice{
+	color: #335582;
+	padding:0;
+	margin-top:30px;
+	margin-left: 50px;
+	margin-bottom:0px;
+}
+
+h4.request{
+	color: #BF1F1F;
+	padding:0;
+	margin-top:30px;
+	margin-left: 50px;
+	margin-bottom:0px;
+}
+
+h4.test{
+	color: #F2BC46;
+	padding:0;
+	margin-top:30px;
+	margin-left: 50px;
+	margin-bottom:0px;
+}
+
+p.plans{
+	position: relative;
+	padding:0;
+	margin-left:50px;
+	margin-top:5px;	
+}
+
+p.edit{
+	height:20px;
+	padding-top:6px;
+	width:50px;
+	margin-left: 50px;
+	background-color: #999;
+	color:#fff;
+	text-align: center;
+	opacity: 0;
+	display: inline;
+}
+
+p.addPractice{
+	position: relative;
+	margin-left: 50px;
+	background-color: #335582;
+	padding-top:15px;
+	text-align: center;
+	color: #fff;
+	width: 235px;
+	height: 28px;
+	cursor: pointer;
+}
+
+input.calNotes{
+	height:20px;
+	width:235px;
+}
+
+p.submitRequest{
+	position: relative;
+	margin-left: 50px;
+	background-color: #BF1F1F;
+	padding-top:15px;
+	text-align: center;
+	color: #fff;
+	width: 235px;
+	height: 28px;
+	cursor: pointer;
+}
+
+p.testReq{
+	position: relative;
+	margin-left: 50px;
+	background-color:  #F2BC46;
+	padding-top:15px;
+	text-align: center;
+	color: #fff;
+	width: 235px;
+	height: 28px;
+	cursor: pointer;
+}
+
+p.submit{
+	position: relative;
+	margin-left: 50px;
+	background-color: #999;
+	padding-top:15px;
+	text-align: center;
+	color: #fff;
+	width: 100px;
+	height: 28px;
+	cursor: pointer;
+}
+
+h2.control{
+	text-align: center;
+	color:#999;
+	font-weight: 400;
+	font-size: 12px;
+	padding:0;
+	margin:0;
+}
+
+ul.dayofWeek{
+	list-style: none;
+	padding:0px;
+	margin:0;
+}
+
+.dayofWeek li{
+	color:#999;
+	width:50px;
+	text-align: center;
+	display: inline-block;
+	padding-right:2px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+li.calendarDate{
+	/*text stuff*/
+	text-align: center;
+	padding-top:16px;
+	color:#fff;
+	font-size: 14px;
+	letter-spacing: 1px;
+
+	/*circle stuff*/
+	list-style: none;
+	display: inline-block;
+	background-color: #CCCCCC;
+	width:50px;
+	height:34px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+	/*Default spacing*/
+	margin-right: 35px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+li.test{
+	text-align: center;
+	padding-top:16px;
+	color:#fff;
+	font-size: 14px;
+	letter-spacing: 1px;
+
+	/*circle stuff*/
+	list-style: none;
+	display: inline-block;
+	background-color: #F2BC46;
+	width:50px;
+	height:34px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+	/*Default spacing*/
+	margin-right: 35px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+li.class{
+	text-align: center;
+	padding-top:16px;
+	color:#fff;
+	font-size: 14px;
+	letter-spacing: 1px;
+
+	/*circle stuff*/
+	list-style: none;
+	display: inline-block;
+	background-color: #BF1F1F;
+	width:50px;
+	height:34px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+	/*Default spacing*/
+	margin-right: 35px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+li.practice{
+	text-align: center;
+	padding-top:16px;
+	color:#fff;
+	font-size: 14px;
+	letter-spacing: 1px;
+
+	/*circle stuff*/
+	list-style: none;
+	display: inline-block;
+	background-color: #335582;
+	width:50px;
+	height:34px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+	/*Default spacing*/
+	margin-right: 35px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.fakeName{
+	position: absolute;
+	top:20px;
+
+	text-align: left;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.fakeLink{
+	position: absolute;
+	top:20px;
+	right: 0px;
+	display: inline;
+	list-style: none;
+	margin:0;
+
+	text-align: right;
+}
+
+.rightLink{
+	display: inline-block;
+	list-style: none;
+	padding-left: 20px;
+}
+
+
+
+h1#title{
+	text-align: center;
+	
+	padding:10px;
+	margin:0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: #999;
+}
